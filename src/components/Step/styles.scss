@@ -1,0 +1,57 @@
+div[disabled]
+{
+  pointer-events: none;
+  opacity: 0.7;
+}
+.step {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid rgb(175, 175, 175);
+  margin: 20px 0 0 100px;
+  cursor: pointer;
+  &-touched {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid rgb(67, 142, 255);
+    margin: 20px 0 0 100px;
+    font-weight: 700;
+    color: rgb(67, 142, 255);
+    transition: 1s ease;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &-text {
+    position: relative;
+    top: 40px;
+  }
+}
+
+.line {
+  position: relative;
+  height: 128px;
+  border: 2px solid rgb(175, 175, 175);
+  transform: rotate(90deg);
+  margin: 0 12px;
+  left: 50px;
+  top: -33px;
+  &-touched {
+    position: relative;
+    height: 128px;
+    border: 2px solid rgb(67, 142, 255);
+    transform: rotate(90deg);
+    margin: 0 12px;
+    left: 50px;
+    top: -33px;
+    transition: 1s ease;
+    &:last-child {
+      display: none;
+    }
+  }
+  &:last-child {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  &-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
+.steps-select {
+  min-width: 40px;
+  min-height: 40px;
+  margin: 25px;
+  border-radius: 5%;
+  border: rgb(175, 175, 175);
+  cursor: pointer;
+}
